@@ -16,6 +16,8 @@ async function getWeather(city) {
   var temp = (document.querySelector(".degree").innerHTML =
     Math.round(data.main.temp) + "°C");
   var city = (document.querySelector(".city").innerHTML = data.name);
+  var country = (document.querySelector(".country").innerHTML =
+    data.sys.country);
   var humidity = (document.querySelector(".humidity").innerHTML =
     Math.round(data.main.humidity) + "%");
   var wind = (document.querySelector(".wind").innerHTML =
